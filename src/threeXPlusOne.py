@@ -119,6 +119,8 @@ def doTheMath(mySeedNumer_int):
 		if myResult > maxValue_int:
 			maxValue_int = myResult
 
+	print(gh.printWithColour(gh.BIYellow,f"\t   {counter}.\t{1}"),gh.printWithColour(gh.BIRed,f"\t odd"))
+	numSeq_dic[counter] = 1
 	print(gh.printWithColour(gh.BIYellow,f"\n\t [+] Completed at {myResult}, MaxValue = {maxValue_int}"))
 
 	# print(numSeq_dic)
