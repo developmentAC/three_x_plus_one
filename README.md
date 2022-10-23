@@ -32,7 +32,7 @@ python3 threeXPlusOne.py -n 10
 	 [+] Seed Number: 10
 	   0,  10 	 even
 	   1,  5.0 	 odd
-	   2,  16.0  even
+	   2,  16.0 	 even
 	   3,  8.0 	 even
 	   4,  4.0 	 even
 	   5,  2.0 	 even
