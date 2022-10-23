@@ -1,4 +1,4 @@
-# A Demonstration of the 3x+1 Problem.
+# A Demonstration of Collatz Conjecture, or the 3x+1 Problem.
 
 ## Date: 22 2022
 
@@ -73,6 +73,15 @@ python3 threeXPlusOne.py -n 30
 ```
 Note that, again, the last numbers, {8,4,2, STOP} are the ending elements of the sequence.
 
+## General Plot
+
+We create the sequences of seed values from 1 to 30 and plot each below.
+
+![graphics/plot_30.png](graphics/plot_30.png)
+
+In accordance with according to Collatz Conjecture, the plotted results from the first thirty seeds, convege to values [4, 2, 1]. Sequences from very large numbers have also been tested by these same rules and none to date have been found to terminate on other values than [4, 2, 1].
+
+_Make histrory by finding a logical reason to explain why the equation $f(x) = 3x+1$ gives these distiguishing terminating sequences, while other (similar) equations have no such convergencing sequences._
 
 ## Further learning: 
 
