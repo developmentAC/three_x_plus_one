@@ -108,7 +108,6 @@ banner1_str = """
 # banner ref: https://manytools.org/hacker-tools/ascii-banner/
 # style: ASCII text banners
 
-
 def checkDataDir(dir_str):
 #function to determine whether a data output directory exists.
 #if the directory doesnt exist, then it is created
@@ -124,8 +123,6 @@ def checkDataDir(dir_str):
 		return 0
 #end of checkDataDir()
 
-
-
 def get_platformType():
 	"""Function to dermine the OS type."""
 	platforms = {
@@ -137,7 +134,6 @@ def get_platformType():
 		return sys.platform
 	return platforms[sys.platform]
 #end of get_platformType()
-
 
 def printWithColour(colCode_str, myMessage_str):
 	"""A function to print with colour for Unix and MacOS."""
@@ -164,9 +160,6 @@ def bannerScreen(myCount_int):
 	else:
 		print(banner1_str)
 #end of bannerScreen()
-
-
-
 
 def helper():
 	"""Cheap and friendly online help; how to use the program"""

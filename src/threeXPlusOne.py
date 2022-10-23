@@ -74,7 +74,7 @@ def getArguments(argv_list):
 
 def countDown(in_int):
 	""" function to call doTheMath() for a user-specificed number of times."""
-	print(gh.printWithColour(gh.BICyan,f"\t [+] preparing all sequences from a count of 1 to {in_int}"))
+	print(gh.printWithColour(gh.BICyan,f"\t [+] Preparing all sequences from a count of 1 to {in_int}"))
 
 	for i in range(1,in_int + 1,1):
 		print(gh.printWithColour(gh.BICyan,f"\n\t ___ Number {i} ___"))
@@ -97,26 +97,25 @@ def doTheMath(mySeedNumer_int):
 	""" Driver function for the math experiment using the seed number. """
 
 	myResult = mySeedNumer_int
-	numSeq_dic = {}
-	counter = 0
+	numSeq_dic = {0:mySeedNumer_int}
+	counter = 1
 	maxValue_int = 0 # largest value of sequence
-
-
 	while myResult != 1:
 		# print(gh.printWithColour(gh.BIYellow,f"\t [+] myResult: {myResult}"))
 
 		if int(myResult % 2) == 0: #even?
-			print(gh.printWithColour(gh.BIYellow,f"\t   {counter},  {myResult}"),gh.printWithColour(gh.BIGreen,f"\t even"))
+			print(gh.printWithColour(gh.BIYellow,f"\t   {counter}.\t{myResult}"),gh.printWithColour(gh.BIGreen,f"\t even"))
 			myResult = int(myResult /2)
 
 			numSeq_dic[counter] = myResult
 
 		elif myResult % 2 == 1: #odd?
-			print(gh.printWithColour(gh.BIYellow,f"\t   {counter},  {myResult}"),gh.printWithColour(gh.BIRed,f"\t odd"))
+			print(gh.printWithColour(gh.BIYellow,f"\t   {counter}.\t{myResult}"),gh.printWithColour(gh.BIRed,f"\t odd"))
 			myResult = int((myResult * 3) + 1)
 			numSeq_dic[counter] = myResult
 
 		counter = counter + 1
+		# keep track of largest value for display at finish
 		if myResult > maxValue_int:
 			maxValue_int = myResult
 
@@ -130,7 +129,6 @@ def begin(myNumber_int):
 	"""Driver function"""
 	# print("\nbegin()")
 	print(gh.printWithColour(gh.BIYellow,f"\n\t [+] Seed Number: {myNumber_int}"))
-	# exit()
 
 	# print(gh.printWithColour(gh.BIGreen,f"\t Running ..."))
 
