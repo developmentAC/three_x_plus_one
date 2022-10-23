@@ -107,13 +107,13 @@ def doTheMath(mySeedNumer_int):
 
 		if int(myResult % 2) == 0: #even?
 			print(gh.printWithColour(gh.BIYellow,f"\t   {counter},  {myResult}"),gh.printWithColour(gh.BIGreen,f"\t even"))
-			myResult = myResult /2
+			myResult = int(myResult /2)
 
 			numSeq_dic[counter] = myResult
 
 		elif myResult % 2 == 1: #odd?
 			print(gh.printWithColour(gh.BIYellow,f"\t   {counter},  {myResult}"),gh.printWithColour(gh.BIRed,f"\t odd"))
-			myResult = (myResult * 3) + 1
+			myResult = int((myResult * 3) + 1)
 			numSeq_dic[counter] = myResult
 
 		counter = counter + 1
